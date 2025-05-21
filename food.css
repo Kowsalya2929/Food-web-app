@@ -186,9 +186,10 @@ svg:hover{
 }
 
 .menu2 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 35px;
+    padding: 5px;;
 }
 
 .menu21 {
@@ -405,3 +406,5 @@ svg:hover{
     }
 
 }
+
+
