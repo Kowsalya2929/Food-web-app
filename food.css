@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    border-bottom: 2px solid rgb(222, 222, 222);
+    box-shadow: 2px 5px 5px gainsboro;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.h1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu {
+    display: none;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+li a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(253, 177, 64);
+    transition: width 0.3s ease-in-out;
+}
+
+li a:hover {
+    color: rgb(253, 177, 64);
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+svg:hover{
+    background-color: orange;
+}
+
+.svgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.svgs i:hover{
+    color: rgb(253, 177, 64);
+    cursor: pointer;
+}
+
+.main_section {
+    padding-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-left: 100px;
+    padding-right: 60px;
+    gap: 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+.main_img {
+    height: 35rem;
+    width: 40rem;
+}
+
+.main h1{
+    font-family:sans-serif;
+    font-size: 3.8rem;
+}
+
+.main p {
+    font-size: 17px;
+    word-spacing: 2px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.main button {
+    background-color: rgb(253, 177, 64);
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+.about_section {
+    padding-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 60px;
+    gap: 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+.about_img {
+    height: 35rem;
+    width: 45rem;
+}
+
+.about h1{
+    font-family:sans-serif;
+    font-size: 3.8rem;
+    text-transform: capitalize;
+}
+
+.about p {
+    font-size: 17px;
+    word-spacing: 2px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.about button {
+    background-color: rgb(253, 177, 64);
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1140px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: white;
+    }
+    ul {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .menu i:hover {
+        color: rgb(253, 177, 64);
+    }
+    .h1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        gap: 100px;
+        padding-bottom: 20px;
+    }
+    .svgs {
+        gap: 30px;
+    }
+    .main_section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 150px 30px 0;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        width: 100%;
+    }
+    .main_img {
+        height: 15rem;
+        width: 20rem;
+    }
+    .main h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .main p {
+        text-align: justify;
+        margin-bottom: -1px;
+    }
+    .main button{
+        margin-bottom: 20px;
+    }
+    .but {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 150px 30px 0;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        width: 100%;
+        margin-top: -100px;
+    }
+    .about_img {
+        height: 15rem;
+        width: 20rem;
+    }
+    .about h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .about p {
+        text-align: justify;
+        margin-bottom: -1px;
+    }
+    .about button{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
